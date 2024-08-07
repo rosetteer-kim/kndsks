@@ -5,7 +5,7 @@ import streamlit as st
 # CSV 파일에서 데이터 읽기
 @st.cache_data
 def load_data():
-    data = pd.read_csv("data.csv")
+    data = pd.read_csv("data_all.csv")
     data['학번'] = data['학번'].astype(str)
     return data
 
